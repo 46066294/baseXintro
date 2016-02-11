@@ -32,6 +32,7 @@ public final class BX_Client01 {
       //cad = cad + "where document-uri($doc) = \"mondial.xml\" ";
       //cad = cad + "return $doc//continent/@name/string()";
       String cad = "collection('mondial.xml')//name/string()";
+      //String cad = "collection('mondial.xml')//..";
       // Executem la consulta
       System.out.println("Executant consulta: "+cad);  
       System.out.println(session.query(cad).execute());
